@@ -77,7 +77,9 @@ setMethod("plot", signature=c("moa", "missing"), function(x, value, type=1,
       axes <- 1:2
     .plot.var(x, axes=axes, layout=layout, col=col, ...)
   } else if (value %in% c("RV", "rv")) {
-    .heatmap.rv(x, ...)
+    if (is.null(col))
+      col <- heat.colors(12)
+      .heatmap.rv(x, col=col, ...)
   } else
     stop ("unknow value selected.")
   
