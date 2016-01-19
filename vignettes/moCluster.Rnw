@@ -16,7 +16,7 @@ BiocStyle::latex(bibstyle="unsrt")
 \title{\Biocpkg{moCluster}: Integrative clustering using multiple omics data}
 
 \author{Chen Meng}
-\date{Modified: June 03, 2015.  Compiled: \today.}
+\date{Modified: January 19, 2016.  Compiled: \today.}
 
 \begin{document}
 
@@ -39,7 +39,7 @@ Introduction to moCluter algorithm.
 
 \section{Run moCluster}
 \subsection{Quick start}
-In this vignette, we will define subtypes the NCI-60 cell lines using four transcriptomic data from different microarray platforms. First we load the package and data
+The moCluster method is described in \cite{moCluster}. In this vignette, we will define subtypes the NCI-60 cell lines using four transcriptomic data from different microarray platforms. First we load the package and data
 
 <<loadLib>>=
 # loading package and gene expression data
